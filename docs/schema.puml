@@ -1,0 +1,23 @@
+@startuml
+!theme crt-green
+
+object Projekt {
+	name: String
+	schlüssel: String
+	...
+}
+object Grundstück {
+	bezeichnung: String
+	fläche: Number
+	...
+}
+object Eigentümer {
+	vorname: String
+	nachname: String
+	iban: String
+}
+
+Projekt --> Grundstück
+Grundstück --> Eigentümer
+
+@enduml
